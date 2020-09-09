@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdzApp</title>
+
+    <link href="css/main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="#" onclick="window.location.href='admin-index.html'">
+        <svg viewBox="0 0 100 100">
+          <g transform="translate(10 5) scale(0.8 0.9)">
+            <path
+              d="M 0 30 v 70 h 100 v -70 l -50 -30 z"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+        <span>
+          Home
+        </span>
+      </a>
+
+      <a href="#" onclick="window.location.href='admin-createAd.html'">
+        <svg viewBox="0 0 100 100">
+          <g transform="translate(5 5) scale(0.9 0.9)">
+            <path
+              d="M 50 35 a 20 20 0 0 1 50 0 q 0 25 -50 60 q -50 -35 -50 -60 a 25 25 0 0 1 50 0"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+        <span>
+          PostAd
+        </span>
+      </a>
+
+      <a href="#" onclick="window.location.href='admin-search.html'">
+        <svg viewBox="0 0 100 100">
+          <g transform="translate(5 5) scale(0.9 0.9)">
+            <circle
+              cx="45"
+              cy="38"
+              r="38"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+            />
+            <line
+              x1="66"
+              y1="65"
+              x2="100"
+              y2="100"
+              stroke="currentColor"
+              stroke-width="10"
+            />
+          </g>
+        </svg>
+        <span>
+          Search
+        </span>
+      </a>
+
+      <a
+        href=""
+        onclick="window.location.href='admin-account.html'"
+        class="active"
+        style="--hover-bg:#1892A620; --hover-c:#1892A6;"
+      >
+        <svg viewBox="0 0 100 100">
+          <g transform="translate(5 5) scale(0.9 0.9)">
+            <circle
+              cx="50"
+              cy="35"
+              r="18"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+            />
+            <rect
+              x="15"
+              y="75"
+              width="70"
+              height="50"
+              rx="25"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+            />
+          </g>
+        </svg>
+        <span>
+          Profile
+        </span>
+      </a>
+    </nav>
+
+    <div class="container">
+      <h3 class="htitle">Profile</h3>
+      <div class="profile-card">
+        <div class="wrapperr">
+          <img src="images/coke-logo.png" alt="" class="image--cover" />
+          <div class="myinfo">
+            <span class="name">Coca Cola</span><br />
+            <span class="userid">info@cocacola.co.za</span>
+          </div>
+        </div>
+
+        <div class="profileKPI">
+          <div class="user-info user-posts borderLeft">
+            <span class="kpiOn">33</span><span class="kpiOn">Posts</span>
+          </div>
+          <div
+            class="user-info user-posts borderLeft"
+            onclick="window.location.href = 'dailyChecklists.php';"
+          >
+            <span>33</span><span>Likes</span>
+          </div>
+          <div class="user-info user-followers borderLeft">
+            <span>22</span><span>Dislike</span>
+          </div>
+          <div class="user-info user-following">
+            <span>22</span><span>Views</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="htitle">Manage Your Posts</h3>
+
+      <div class="search-container" style="padding-top: 10px;">
+        <input
+          type="text"
+          id="search-bar"
+          data-search=""
+          placeholder="Search by subject, date or region."
+        />
+        <img class="search-icon" src="images/search-icon.png" />
+      </div>
+      <br />
+
+      <div class="posts-container">
+        <div class="post-card">
+          <div class="post-header">
+            <img src="images/coke-logo.png" class="post-user-image" />
+            <a class="post-user-name" href="#">Coca Cola</a>
+            <div class="post-time">58 min</div>
+          </div>
+
+          <div class="post-card-image">
+            <img src="images/coca-cola.jpg" width="242" height="363" />
+          </div>
+
+          <div class="post-content">
+            <p class="ad-title">Coca-Cola Journey</p>
+            <p class="post-content-user">
+              Coca-Cola Journey finds fresh ways to tell our sustainability and
+              innovation stories. Champions our culture & humanizes our company.
+            </p>
+            <p class="readmore">Read more</p>
+            <hr />
+          </div>
+
+          <div class="post-footer">
+            <a class="favBTN" href="javascript:void(0);"
+              ><i class="fas fa-heart"></i
+            ></a>
+            <input
+              class="likes"
+              type="text"
+              disabled="disabled"
+              placeholder="58,545 Likes"
+            />
+            <div class="editBTN">
+              <a href="javascript:void(0);"><i class="fas fa-trash-alt"></i></a>
+              <a href="admin-modifyPost.html"><i class="fas fa-edit"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/nav.js"></script>
+    <script src="js/slideshow.js"></script>
+  </body>
+</html>

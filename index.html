@@ -1,0 +1,271 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdzApp</title>
+
+    <link href="css/main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a
+        href="user-index.html"
+        class="active"
+        onclick="window.location.href='index.html'"
+        style="--hover-bg:#5B37B720; --hover-c:#5B37B7;"
+      >
+        <svg viewBox="0 0 100 100">
+          <g transform="translate(10 5) scale(0.8 0.9)">
+            <path
+              d="M 0 30 v 70 h 100 v -70 l -50 -30 z"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+        <span>
+          Home
+        </span>
+      </a>
+
+      <a href="#" onclick="window.location.href='user-createAd.html'">
+        <svg viewBox="0 0 100 100">
+          <g transform="translate(5 5) scale(0.9 0.9)">
+            <path
+              d="M 50 35 a 20 20 0 0 1 50 0 q 0 25 -50 60 q -50 -35 -50 -60 a 25 25 0 0 1 50 0"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+        <span>
+          PostAd
+        </span>
+      </a>
+
+      <a href="#" onclick="window.location.href='user-search.html'">
+        <svg viewBox="0 0 100 100">
+          <g transform="translate(5 5) scale(0.9 0.9)">
+            <circle
+              cx="45"
+              cy="38"
+              r="38"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+            />
+            <line
+              x1="66"
+              y1="65"
+              x2="100"
+              y2="100"
+              stroke="currentColor"
+              stroke-width="10"
+            />
+          </g>
+        </svg>
+        <span>
+          Search
+        </span>
+      </a>
+
+      <a href="" onclick="window.location.href='user-myAccount.html'">
+        <svg viewBox="0 0 100 100">
+          <g transform="translate(5 5) scale(0.9 0.9)">
+            <circle
+              cx="50"
+              cy="35"
+              r="18"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+            />
+            <rect
+              x="15"
+              y="75"
+              width="70"
+              height="50"
+              rx="25"
+              stroke="currentColor"
+              stroke-width="10"
+              fill="none"
+            />
+          </g>
+        </svg>
+        <span>
+          Profile
+        </span>
+      </a>
+    </nav>
+    <div class="bannerAdz">
+      <div class="slideshowContainer">
+        <!-- Replace the image 'src' with the images in your project.
+            Javascript is set up so that you can add as many images as you like, but make sure that you match the number of 'circle' span elements (below) to the number of images -->
+        <img
+          class="imageSlides"
+          src="images/Doritos.png"
+          alt="beach side city view"
+        />
+        <img
+          class="imageSlides"
+          src="images/coca-cola.jpg"
+          alt="leaf on the ground"
+        />
+        <img
+          class="imageSlides"
+          src="images/vehicle.jpg"
+          alt="lake surrounded by mountains"
+        />
+
+        <!-- I would recommend to replace these 'span' elements with 'img' files
+            for each the left and right arrow that fits your project, and size accordingly.
+            I've shown 'span' elements because I didn't want to upload files. -->
+        <span id="leftArrow" class="slideshowArrow">&#8249;</span>
+        <span id="rightArrow" class="slideshowArrow">&#8250;</span>
+
+        <div class="slideshowCircles">
+          <!-- Filled 'dot' class is set to first image in slideshow, and then via Javascript the filled 'dot' class follows the current image.
+            Make sure you match the number of these 'circle' span elements to the number of images in your slideshow. -->
+          <span class="circle dot"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container home-container">
+      <span class="categ">Categories</span>
+      <span class="scrollp">Swipe across >></span>
+      <div class="groupWrap">
+        <div class="groupMenu">
+          <div class="user-info user-posts"
+          style="background: linear-gradient(180deg,#00293cc2 0%, #0026387a 130%), url(images/uncategory.jpg);background-size: cover;
+          background-position: center;"
+          >
+            <span class="kpiOn">33</span
+            ><span class="kpiOn">All <i class="fas fa-border-all"></i></span>
+          </div>
+          <div
+            class="user-info user-posts"
+            style="background: linear-gradient(180deg,#00293cc2 0%, #0026387a 130%), url(images/9D1A8898.jpg);background-size: cover;
+            background-position: center;"
+          >
+            <span>33</span><span>Foods <i class="fas fa-hotdog"></i></span>
+          </div>
+          <div
+            class="user-info user-followers"
+            style="background: linear-gradient(180deg,#00293cc2 0%, #0026387a 130%), url(images/clothes.jpg);background-size: cover;
+          background-position: center;"
+          >
+            <span>22</span><span>Clothing <i class="fas fa-tshirt"></i></span>
+          </div>
+          <div
+            class="user-info user-following"
+            style="background: linear-gradient(180deg,#00293cc2 0%, #0026387a 130%), url(images/vehicle.jpg);background-size: cover;
+          background-position: center;"
+          >
+            <span>22</span><span>Vehicles <i class="fas fa-car-side"></i></span>
+          </div>
+          <div
+            class="user-info user-following"
+            style="background: linear-gradient(180deg,#00293cc2 0%, #0026387a 130%), url(images/electronic.jpg);background-size: cover;
+          background-position: center;"
+          >
+            <span>22</span><span>Electronics <i class="fas fa-tv"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="htitle">Recents Products</h3>
+
+      <div class="posts-container">
+        <div class="post-card">
+          <div class="post-header">
+            <img src="images/Doritos_Logo.png" class="post-user-image" />
+            <a class="post-user-name" href="#">Doritos Inc</a>
+            <div class="post-time">58 min</div>
+            <hr />
+          </div>
+         
+          <div class="post-card-image">
+            <img src="images/Doritos.png" width="242" height="363" />
+          </div>
+
+          <div class="post-content">
+            <p class="ad-title">Doritos. For the Bold</p>
+            
+            <p class="post-content-user">
+              Sucking a man’s finger to taste Doritos chips is not sexual
+              harassment😱, SA advertising regulator rules
+            </p>
+            <p class="readmore">Read more</p>
+            <hr />
+          </div>
+
+          <div class="post-footer">
+            <a class="favBTN" href="javascript:void(0);"
+              ><i class="fas fa-heart"></i
+            ></a>
+            <input
+              class="likes"
+              type="text"
+              disabled="disabled"
+              placeholder="18,545 Likes"
+            />
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-header">
+            <img src="images/coke-logo.png" class="post-user-image" />
+            <a class="post-user-name" href="#">Coca Cola</a>
+            <div class="post-time">21/11/2019</div>
+            <hr />
+          </div>
+
+          <div class="post-card-image">
+            <img src="images/coca-cola.jpg" width="242" height="363" />
+          </div>
+
+          <div class="post-content">
+              <p class="ad-title">Coca-Cola Journey</p>
+            <p class="post-content-user">
+              Coca-Cola Journey finds fresh ways to tell our sustainability and innovation stories. Champions our culture & humanizes our company.
+            </p>
+            <p class="readmore">Read more</p>
+            <hr />
+          </div>
+
+          <div class="post-footer">
+            <a class="favBTN" href="javascript:void(0);"
+              ><i class="fas fa-heart"></i
+            ></a>
+            <input
+              class="likes"
+              type="text"
+              disabled="disabled"
+              placeholder="58,545 Likes"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/nav.js"></script>
+    <script src="js/slideshow.js"></script>
+  </body>
+</html>
